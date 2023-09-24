@@ -1,6 +1,8 @@
 # 東京都の卸売市場のデータを抽出します
 データ分析を勉強したいと思い、東京都の卸売市場のデータを抽出しました。
+
 データは、東京都のオープンデータを利用させていただきました。
+
 https://www.shijou.metro.tokyo.lg.jp/torihiki/week/
 
 ## 環境
@@ -11,9 +13,10 @@ https://www.shijou.metro.tokyo.lg.jp/torihiki/week/
 
 ## データの抽出方法
 データの抽出方法は、スクレイピングを利用しています。
+
 Azure Functionsでスクレイピングを実行し、Azure Blob Storageにデータを保存しています。
+
 実行にはタイマー方式と、HTTPリクエスト方式の2種類があります。
-※
 
 ## ローカルでの実行方法
 1. 「local.settubgs.json」を作成しAzureWebJobsStorageに接続文字列を設定してください。
